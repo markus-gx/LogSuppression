@@ -4,7 +4,7 @@ A small extension or encapsulation of the classic SL4J (https://www.slf4j.org) l
 
 ## How It Works
 Instead of using `LoggerFactory.getLogger()` to receive your Logger you have to use `Logger.LoggerBuilder()` to receive a Logger implementing the SL4J Logger Interface. 
-With this logger you can now use every method available in this interface (like the normal one), but now logs are now suppressed based on your configuration. 
+With this logger you can now use every method available in this interface (like the normal one), but logs are now suppressed based on your configuration. 
 
 ## Configuration
 Example (The following configuration means that every 5s (5000 ms) a maximum of 2 logs can be logged of any kind) 
