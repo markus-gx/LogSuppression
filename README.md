@@ -6,6 +6,24 @@ A small extension or encapsulation of the classic SL4J (https://www.slf4j.org) l
 Instead of using `LoggerFactory.getLogger()` to receive your Logger you have to use `Logger.LoggerBuilder()` to receive a Logger implementing the SL4J Logger Interface. 
 With this logger you can now use every method available in this interface (like the normal one), but logs are now suppressed based on your configuration. 
 
+## Maven Repository
+```
+    <repositories>
+        <repository>
+            <id>logsuppression</id>
+            <url>http://raw.github.com/geilix10/LogSuppression/repository</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>at.geilehner</groupId>
+            <artifactId>logsuppression</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+```
+
 ## Configuration
 Example (The following configuration means that every 5s (5000 ms) a maximum of 2 logs can be logged of any kind) 
 ```
