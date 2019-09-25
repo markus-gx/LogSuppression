@@ -13,7 +13,7 @@ Logger logger = new at.geilehner.logger.Logger.LoggerBuilder()
                 .maxMessagesPerDelay(2)
                 .suppressDelay(5000)
                 .reference(ExampleTest.class).build();
-
+```
 
 *maxMessagesPerDelay(int max)* 
 The maximum number of logs to be issued in a given period of time. Default value = 10. 
