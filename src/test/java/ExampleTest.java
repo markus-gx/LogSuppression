@@ -9,11 +9,11 @@ public class ExampleTest {
                 .suppressDelay(5000)
                 .reference(ExampleTest.class).build();
 
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 50; i++){
             logger.info("test");
             logger.error("test");
             logger.warn("test");
-            Thread.sleep(250);
+            Thread.sleep(100);
         }
     }
 }
